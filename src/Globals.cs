@@ -1,7 +1,12 @@
+using System.ComponentModel;
+
 namespace Globals
 {
-    public static class GameState
+    public static class GameGlobals
     {
+        
+
+        public static Int16 party = 4;
         public static Int16 width = 40;
         public static Int16 height = 20;
 
@@ -17,5 +22,6 @@ namespace Globals
         public static (Int16 x, Int16 y)[] stairsUp = new (Int16, Int16)[3];
 
         public static Random rng = new Random();
+        
     }
 }

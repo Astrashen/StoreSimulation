@@ -21,14 +21,14 @@ git clone https://github.com/YourUsername/StoreSimulation.git
 2. Navigate to the project folder:
 
 ```bash
-   cd StoreSimulation
+cd StoreSimulation
 
 ```
 
 3. Run the project:
 
 ```bash
-   dotnet run
+dotnet run
 
 ```
 

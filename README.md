@@ -3,8 +3,7 @@ DungeonCrawler-Console
 A lightweight, D&D 3.5 inspired dungeon crawler built in C#
 
 
-🚀 Getting Started
-Prerequisites
+Getting Started Prerequisites
 
     .NET 10.0 SDK or higher.
 

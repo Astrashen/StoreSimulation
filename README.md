@@ -12,8 +12,7 @@ Prerequisites
 
 Installation & Run
 
-    Clone the repository:
-    Bash
+Clone the repository:
 
     git clone https://github.com/YourUsername/StoreSimulation.git
 

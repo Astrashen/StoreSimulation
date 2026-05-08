@@ -15,12 +15,12 @@ Installation & Run
     Clone the repository:
     Bash
 
-git clone https://github.com/YourUsername/StoreSimulation.git
+    git clone https://github.com/YourUsername/StoreSimulation.git
 
 Navigate to the project folder:
 Bash
 
-cd DungeonCrawler
+    cd StoreSimulation
 
 Run the project:
 Bash

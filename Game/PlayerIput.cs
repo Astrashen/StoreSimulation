@@ -1,4 +1,5 @@
 using System;
+using Globals; 
 
 namespace PlayerInput
 {
@@ -26,8 +27,12 @@ namespace PlayerInput
                 case ConsoleKey.S: newY++; break;
                 case ConsoleKey.A: newX--; break;
                 case ConsoleKey.D: newX++; break;
+                
+                case ConsoleKey.P: 
+                    DungeonCrawler.GameState.CurrentState = DungeonCrawler.GameStateType.Paused; 
+                    return; 
             }
-
+            //collision
             if (newX >= 0 && newX < width &&
                 newY >= 0 && newY < height &&
                 map[newX, newY, currentFloor] != '#')
@@ -36,19 +41,20 @@ namespace PlayerInput
                 playerY = newY;
             }
 
+            // stairs
             char tile = map[playerX, playerY, currentFloor];
 
             if (tile == '>' && currentFloor < totalFloors - 1)
             {
                 currentFloor++;
-
+                // Moving down usually lands you on the 'Up' stairs of the next floor
                 playerX = stairsUp[currentFloor].x;
                 playerY = stairsUp[currentFloor].y;
             }
             else if (tile == '<' && currentFloor > 0)
             {
                 currentFloor--;
-
+                // Moving up usually lands you on the 'Down' stairs of the previous floor
                 playerX = stairsDown[currentFloor].x;
                 playerY = stairsDown[currentFloor].y;
             }

@@ -29,12 +29,9 @@ Bash
 
 🎮 How to Play
 
-Key	Action
-W, A, S, D	Move Character (@)
-P	Pause Game / Access Save Menu
-< / >	Use Stairs to change floors
-Enter	Confirm Menu Selection
+    Key	Action
+    W, A, S, D	Move Character (@)
+    P	Pause Game / Access Save Menu
+    < / >	Use Stairs to change floors
+    Enter	Confirm Menu Selection
 
-ONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
